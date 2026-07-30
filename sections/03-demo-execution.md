@@ -26,14 +26,6 @@ nav_order: 3
 
 ## 3.2 Live Demo 
 
-### Running the Malleable Application
-
-
-### What to Expect on Screen
-
-
-### Interactive Exploration
-
 
 ---
 

@@ -42,7 +42,24 @@ It also makes cleanup simple: when the tutorial ends, simply remove the containe
 
 ## 2.2 Building the Docker Image 
 
-### Step 1: Download and Build
+### Step 1: Understanding the Dockerfile
+
+The Dockerfile uses a multi-stage build pattern to separate the heavy build process from the final lightweight execution image.
+
+- Stage 1: Build & Compilation
+  - System Tools & Dev Libraries: Installs essential compilation tools.
+  - Download dependencies
+  - Extraction & Compilation: Unpacks, configures, compiles (make), and installs all downloaded tools into /usr/local.
+
+- Stage 2: Final Runtime Image
+  - Runtime Dependencies: Installs runtime tools and system dependencies.
+  - Copying Compiled Libraries: Copies the pre-compiled binaries and libraries from stage1 (/usr/local) directly into the final image.
+  - Service Configurations: munge, slurm and redis. 
+  - User Provisioning & SSH Setup
+  - Container Entrypoint: Copies docker-entrypoint.sh to the root directory and assigns it as the container's entrypoint to manage startup processes when the container runs.
+
+
+### Step 2: Download and Build
 
 Download the docker files from this link. 
 
@@ -59,19 +76,17 @@ cd docker_cluster
 ./launch-slurm-cluster.sh -n 3 -c 3 -d
 ```
 
-After this step, the container should be running and it is accessible by terminal.
+
+### Step 3: Verification
+
+After step 2, the container should be running and it is accessible by terminal.
 
 ```bash
 # Access the desired node: open a console to a cluster node <num_node> 
 docker exec -it test-node-<num_node>-1 /bin/bash
 ```
 
-
-### Step 2: Understanding the Dockerfile
-
-
-### Step 3: Verification
-
+Now, the user can use the system like a real machine with an Ubuntu OS installed.
 
 ---
 
