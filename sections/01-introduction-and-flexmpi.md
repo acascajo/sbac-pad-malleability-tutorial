@@ -10,7 +10,25 @@ nav_order: 1
 
 ### HPC Area and Dynamic Systems
 
-Add some background
+- Traditional resource management in HPC is static (inefficient?). 
+  - Reservations are static, with fixed resources for each job. 
+  - Current deployment models demand varying resources at runtime (by phases, workflow stages, etc.).
+
+- Opportunities:
+  - Adapt resources to actual demand
+  - Fill gaps between tasks
+  - Start tasks earlier with fewer resources
+  - Reduce work group completion time
+  - Potential energy savings through consolidation
+
+- Related works
+
+| Alternative | Mechanism | Slurm support | 
+|---|---|---|
+| FlexMPI | Runtime + Monitor + library | Yes |
+| Elastic MPI | MPI extension + slurm coordinator | Yes |
+| DMR | Resource manager + MPI library | 4+ |
+
 
 ### Job Types
 
