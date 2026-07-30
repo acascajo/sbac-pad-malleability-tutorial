@@ -144,25 +144,8 @@ docker exec -it test-node-1-1 /bin/bash
 
 ### Proposed layout
 
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│  ┌──────────────┐    ┌──────────────┐               │
-│  │              │    │  htop        │               │
-│  │  User code   │    │  (node 1)    │               │
-│  │  execution   │    │              │               │
-│  │  (larger)    │    ├──────────────┤               │
-│  │              │    │  htop        │               │
-│  │              │    │  (node 2)    │               │
-│  │              │    ├──────────────┤               │
-│  │              │    │  htop        │               │
-│  │              │    │  (node 3)    │               │
-│  ├──────────────┤    ├──────────────┤               │
-│  │  ic_server   │    │  view.sh     │               │
-│  │  (smaller)   │    │              │               │
-│  └──────────────┘    └──────────────┘               │
-│                                                     │
-│       LEFT HALF                 RIGHT HALF           │
-└─────────────────────────────────────────────────────┘
+![Proposed layout with tmux or individual terminals](/images/layout.png)
+
 
 ### Testing the Connection
 
