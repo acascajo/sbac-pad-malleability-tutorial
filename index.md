@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Tutorial
 ---
 
 # Unlocking Malleability in HPC Applications
