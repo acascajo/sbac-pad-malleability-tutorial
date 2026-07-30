@@ -144,7 +144,7 @@ docker exec -it test-node-1-1 /bin/bash
 
 ### Proposed layout
 
-![Proposed layout with tmux or individual terminals](/images/layout.png)
+![Proposed layout with tmux or individual terminals](../images/layout.png)
 
 
 ### Testing the Connection
