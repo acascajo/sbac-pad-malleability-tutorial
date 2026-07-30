@@ -50,7 +50,9 @@ A hands-on tutorial on transforming rigid MPI applications into malleable ones u
 
 - Basic knowledge of MPI programming
 - Docker installed on your machine
-- Familiarity with C/C++ and Linux command line
+- Familiarity with C/C++ and command line.
+
+See the [full prerequisites page](sections/00-prerequisites) for platform-specific setup instructions
 
 ---
 

@@ -18,36 +18,51 @@ nav_order: 1
 - **Evolving** — Resources can change at well-defined stages
 - **Malleable** — Resources can be added/removed dynamically during execution
 
-### Malleability Policies
+### Dynamic Resource Management Policies
 
-- **Proactive malleability** — Resources are adjusted predictively based on forecasts
-- **Reactive malleability** — Resources are adjusted in response to actual system events
+- **Proactive** — Resources are adjusted predictively based on forecasts
+- **Reactive** — Resources are adjusted in response to actual system events
 
 ### Current Challenges
 
+The main challenges involve dynamically managing resources in cooperation with existing management systems (SLURM being the primary one). These systems are complex and are present in most production HPC systems, so integration must be facilitated without requiring customization.
+
+Therefore, the main challenges can be defined as follows:
+- Slurm is designed for static reservations.
+- Applications require support for runtime reconfiguration.
+- Real-time monitoring is required for decision-making.
+- Security: Slurm restricts operations between user jobs.
+- Avoid modifying Slurm to facilitate its use in real-world environments.
 
 ---
 
 ## 1.2 FlexMPI 
 
+Runtime that provides dynamic load balancing and performance-aware malleability capabilities to MPI applications
+
 ### Architecture and Component Description
 
+- Used with iterative SPMD parallel applications
+- Consists of: 
+  - A multithreaded library executed within each MPI application.
+  - An external controller that coordinates the execution of multiple applications (optional).
+  - Interfaces with third-party applications.
 
-### Original Code vs. FlexMPI Code
+-Source code released: https://gitlab.arcos.inf.uc3m.es/desingh/FlexMPI
 
+### Programming example: Original Code vs. FlexMPI Code
 
+- Differences between a pure MPI application and the same application integrated with FlexMPI. 
 
-### FlexMPI Application Co-design
+### FlexMPI Application Co-design: EpiGraph
 
-
-
-### Use Case: EpiGraph
-
-
+- Description of a real-world application that uses FlexMPI to exploit malleability and save energy and costs.
 
 ---
 
 ## 1.3 Environment Setup 
+
+
 
 ### Documentation and GitHub Access
 
