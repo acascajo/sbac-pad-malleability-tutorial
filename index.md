@@ -11,29 +11,29 @@ A hands-on tutorial on transforming rigid MPI applications into malleable ones u
 
 ## Tutorial Program
 
-### Part 1 — Introduction and Content Access (1 hour)
+### Part 1 — Introduction and Content Access 
 
-| Segment | Duration |
-|---|---|
-| Introduction to HPC and dynamic systems | 30 min |
-| FlexMPI architecture and programming model | 20 min |
-| Environment setup and documentation access | 10 min |
+| Segment | 
+|---|
+| Introduction to HPC and dynamic systems | 
+| FlexMPI architecture and programming model |
+| Environment setup and documentation access |
 
-### Part 2 — Preparing the Setup (1 hour)
+### Part 2 — Preparing the Setup 
 
-| Segment | Duration |
-|---|---|
-| Docker environment overview | 15 min |
-| Building the Docker image | 30 min |
-| User interface walkthrough | 15 min |
+| Segment | 
+|---|
+| Docker environment overview | 
+| Building the Docker image | 
+| User interface walkthrough | 
 
-### Part 3 — Demo Execution (1 hour)
+### Part 3 — Demo Execution 
 
-| Segment | Duration |
-|---|---|
-| From pure MPI to FlexMPI | 30 min |
-| Live demo and execution walkthrough | 30 min |
-| (Optional) Malleable execution video | 5–10 min |
+| Segment | 
+|---|
+| From pure MPI to FlexMPI | 
+| Live demo and execution walkthrough | 
+| (Optional) Malleable execution video |
 
 ---
 
