@@ -1,0 +1,4 @@
+title: "Unlocking Malleability in HPC Applications"
+description: "A hands-on tutorial on transforming rigid MPI applications into malleable ones using FlexMPI"
+theme: jekyll-theme-cayman
+show_downloads: false
