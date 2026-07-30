@@ -67,7 +67,7 @@ Runtime that provides dynamic load balancing and performance-aware malleability 
   - An external controller that coordinates the execution of multiple applications (optional).
   - Interfaces with third-party applications.
 
--Source code released: https://gitlab.arcos.inf.uc3m.es/desingh/FlexMPI
+- Source code released: https://gitlab.arcos.inf.uc3m.es/desingh/FlexMPI
 
 ### Programming example: Original Code vs. FlexMPI Code
 
