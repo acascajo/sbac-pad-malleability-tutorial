@@ -200,7 +200,7 @@ int main (int argc, char *argv[])
 }
 ```
 
-### Step 4: Before-and-After Comparison
+### Before-and-After Comparison
 
 With FlexMPI, the application can scale up three processes in iteration 10, and can return to its normal size in iteration 30.
 
