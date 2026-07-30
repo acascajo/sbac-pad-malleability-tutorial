@@ -10,6 +10,7 @@ nav_order: 1
 
 ### HPC Area and Dynamic Systems
 
+Add some background
 
 ### Job Types
 
@@ -62,11 +63,31 @@ Runtime that provides dynamic load balancing and performance-aware malleability 
 
 ## 1.3 Environment Setup 
 
+See the [full prerequisites page](sections/00-prerequisites) for platform-specific setup instructions.
 
+### Docker files
 
-### Documentation and GitHub Access
+Add URL to the docker folder.
 
+### Launch a docker cluster with 3 nodes and 3 "slurm" CPUs
 
+- Open a shell terminal and create the docker cluster using the script.
+
+```bash
+# Uncompress the tarball provided
+tar zxvf docker_cluster.tar
+# Go into the folder
+cd docker_cluster
+# Execute the build and launch script
+./launch-slurm-cluster.sh -n 3 -c 3 -d
+```
+
+After this step, the container should be running and it is accessible by terminal.
+
+```bash
+# Access the desired node: open a console to a cluster node <num_node> 
+docker exec -it test-node-<num_node>-1 /bin/bash
+```
 
 ---
 
