@@ -85,7 +85,7 @@ See the [full prerequisites page](sections/00-prerequisites) for platform-specif
 
 ### Docker files
 
-Add URL to the docker folder.
+Download the [docker image files ](https://github.com/acascajo/sbac-pad-malleability-tutorial/raw/2513280558408aea82c3fc201b234d770afc502b/tutorial_cluste_26-04.tar) to build the environment. 
 
 ---
 
