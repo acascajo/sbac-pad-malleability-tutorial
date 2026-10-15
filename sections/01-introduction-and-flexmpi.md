@@ -81,7 +81,7 @@ Runtime that provides dynamic load balancing and performance-aware malleability 
 
 ## 1.3 Environment Setup 
 
-See the [full prerequisites page](sections/00-prerequisites) for platform-specific setup instructions.
+See the [full prerequisites page](../sections/00-prerequisites) for platform-specific setup instructions.
 
 ### Docker files
 
