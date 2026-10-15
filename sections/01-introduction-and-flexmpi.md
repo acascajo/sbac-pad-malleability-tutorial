@@ -85,7 +85,7 @@ See the [full prerequisites page](sections/00-prerequisites) for platform-specif
 
 ### Docker files
 
-Download the [docker image files ](https://drive.google.com/file/d/1J-XN7hYH8IA0b8L-rIbq_iTCA6Gl3YOp/view?usp=sharing) to build the environment. 
+Download the [docker image files ](https://drive.google.com/file/d/1sK77lo8AMm7I9ohGUqdMXdR2OLdWhdP8/view?usp=sharing) to build the environment. 
 
 ---
 

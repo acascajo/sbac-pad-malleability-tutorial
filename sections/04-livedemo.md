@@ -24,7 +24,7 @@ These are the files and documentation needed to follow this tutorial.
 ## Docker files
 
 
-- Download the [docker image files](../demo/tutorial_cluster_26-04.tgz) to build the environment. 
+- Download the [docker image files](https://drive.google.com/file/d/1sK77lo8AMm7I9ohGUqdMXdR2OLdWhdP8/view?usp=sharing) to build the environment. 
 
 ---
 
