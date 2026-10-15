@@ -74,11 +74,13 @@ Open a shell terminal, unzip the tarball and create the docker cluster using the
 # Go to the Downloads folder (or the folder that contains the tarball)
 cd ~/Downloads
 # Unzip the tarball provided
-tar zxvf tutorial_cluste_26-04.tar
+tar zxvf tutorial_cluster_26-04.tar
 # Go into the folder
-cd tutorial_cluste_26-04
-# Execute the build and launch script: in this case, 3 nodes with 3 cores each. 
-./launch-slurm-cluster.sh -n 3 -c 3 -d
+cd tutorial_cluster_26-04
+# Execute the build script: in this case, 3 nodes with 3 cores each. 
+./launch_cluster.sh build -n 3 -c 3 -p cl
+# Execute the launch script. 
+./launch_cluster.sh start -p cl
 ```
 
 
@@ -88,7 +90,8 @@ After step 2, the container should be running and it is accessible by terminal.
 
 ```bash
 # Access the desired node: open a console to a cluster <cluster_name> node <num_node>
-docker exec -it <cluster_name>-node<num_node> /bin/bash
+# docker exec -it -u mpiuser <cluster_name>-node<num_node> /bin/bash
+  docker exec -it -u mpiuser cl-node1 /bin/bash
 ```
 
 Now, the user can use the system like a real machine with an Ubuntu OS installed.
@@ -108,37 +111,37 @@ In order to see what happens in the system, we recommend oppening 6 terminals.
 
 ```bash
 # Terminal for node-1
-docker exec -it cl-node1 /bin/bash
+docker exec -it -u mpiuser cl-node1 /bin/bash
 htop
 ```
 ```bash
 # Terminal for node-2
-docker exec -it cl-node2 /bin/bash
+docker exec -it -u mpiuser cl-node2 /bin/bash
 htop
 ```
 ```bash
 # Terminal for node-3
-docker exec -it cl-node3 /bin/bash
+docker exec -it -u mpiuser cl-node3 /bin/bash
 htop
 ```
 - **Monitoring Slurm queue**: Open a console and run slurm view script. It shows the slurm queue and refreshes the information every one second.
 
 ```bash
-docker exec -it cl-node1 /bin/bash
+docker exec -it -u mpiuser cl-node1 /bin/bash
 ./shared/view_results.sh
 ```
 
 - **Intelligent Controller server**: Open a console and run the ic_server, that interacts with the applications and Slurm.
 
 ```bash
-docker exec -it cl-node1 /bin/bash
+docker exec -it -u mpiuser cl-node1 /bin/bash
 icc_server
 ```
 
 - **User terminal**: Open a console to interact with the system.
 
 ```bash
-docker exec -it cl-node1 /bin/bash
+docker exec -it -u mpiuser cl-node1 /bin/bash
 # Run whatever you want
 ```
 

@@ -54,6 +54,14 @@ A hands-on tutorial on transforming rigid MPI applications into malleable ones u
 
 See the [full prerequisites page](sections/00-prerequisites) for platform-specific setup instructions
 
+
+## Live Demo Documentation
+
+- Slides for the Live Demo presentation
+- Docker files
+
+See the [live demo](sections/04-livedemo) documentation page for more information
+
 ---
 
 <nav style="text-align: center; margin-top: 2rem;">
